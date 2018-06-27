@@ -27,6 +27,15 @@ var connection =  mysql.createConnection({
 // ROUTES
 //
 
+app.get("/", function(req,res){
+	var toplist = 'SELECT ANY_VALUE(matches.teamname) as team, ANY_VALUE(teams.teamowner) AS owner, ANY_VALUE(teams.teamimg) AS image, sum(match_points) AS points, sum(match_goaldif) AS goaldif FROM matches LEFT JOIN teams ON matches.teamname = teams.teamname GROUP BY matches.teamname ORDER BY points DESC, goaldif DESC'
+	connection.query(toplist, function (error, results){
+	if(error) throw error;
+	var lists = results;
+	res.render("home.ejs", {lists:lists});
+	});
+});
+
 app.get("/matches", function(req,res){
 	var matchesq = 'SELECT * FROM matches ORDER BY match_id';
 	connection.query(matchesq, function (error, results){

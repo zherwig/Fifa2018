@@ -1,0 +1,30 @@
+<% include partials/header %>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col"></th>
+			<th scope="col">Country</th>
+			<th scope="col">Owner</th>
+			<th scope="col">Points</th>
+			<th scope="col">Goal Difference</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% for(var i=0; i < lists.length; i++){ %>
+		<tr>
+			<th scrope="row"> <%= i %> </th>
+			<td> <img src="<%= lists.image %>"></td> 
+			<td> <%= lists.team %></td>
+			<td> <%= lists.owner %></td>
+			<td> <%= lists.points %></td>
+			<td> <%= lists.goaldif %></td>
+		</tr>
+		<% } %>
+	</tbody>
+</table>
+
+
+
+<% include partials/footer %>
