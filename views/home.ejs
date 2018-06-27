@@ -14,12 +14,12 @@
 	<tbody>
 		<% for(var i=0; i < lists.length; i++){ %>
 		<tr>
-			<th scrope="row"> <%= i %> </th>
-			<td> <img src="<%= lists.image %>"></td> 
-			<td> <%= lists.team %></td>
-			<td> <%= lists.owner %></td>
-			<td> <%= lists.points %></td>
-			<td> <%= lists.goaldif %></td>
+			<th scrope="row"> <%= i+1 %> </th>
+			<td> <img src="<%= lists[i].image %>"></td> 
+			<td> <%= lists[i].team %></td>
+			<td> <%= lists[i].owner %></td>
+			<td> <%= lists[i].points %></td>
+			<td> <%= lists[i].goaldif %></td>
 		</tr>
 		<% } %>
 	</tbody>
