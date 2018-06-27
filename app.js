@@ -32,6 +32,7 @@ app.get("/", function(req,res){
 	connection.query(toplist, function (error, results){
 	if(error) throw error;
 	var lists = results;
+	console.log(lists)
 	res.render("home.ejs", {lists:lists});
 	});
 });
