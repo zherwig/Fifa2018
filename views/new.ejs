@@ -1,0 +1,344 @@
+<% include partials/header %>
+
+<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+				<button class="btn btn-primary" id="groupabutton">Group A</button>
+				<button class="btn btn-primary" id="groupbbutton">Group B</button>
+				<button class="btn btn-primary" id="groupcbutton">Group C</button>
+				<button class="btn btn-primary" id="groupdbutton">Group D</button>
+				<button class="btn btn-primary" id="groupebutton">Group E</button>
+				<button class="btn btn-primary" id="groupfbutton">Group F</button>
+				<button class="btn btn-primary" id="groupgbutton">Group G</button>
+				<button class="btn btn-primary" id="grouphbutton">Group H</button>
+		</div>
+	</div>
+
+<form action="/matches" method="POST">	
+	<div class="row hiddengrouprow" id="groupainput">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Group A</h1>
+		</div>
+		<div class="col-md-3 col-md-offset-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="uruguay">Uruguay</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="russia">Russia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="saudi-arabia">Saudi Arabia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="egypt">Egypt</label> 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="uruguay">Uruguay</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="russia">Russia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="saudi-arabia">Saudi Arabia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="egypt">Egypt</label> 
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row hiddengrouprow" id="groupbinput">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Group B</h1>
+		</div>
+		<div class="col-md-3 col-md-offset-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="spain">Spain</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="portugal">Portugal</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="iran">Iran</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="morocco">Morocco</label> 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="spain">Spain</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="portugal">Portugal</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="iran">Iran</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="morocco">Morocco</label> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row hiddengrouprow" id="groupcinput">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Group C</h1>
+		</div>
+		<div class="col-md-3 col-md-offset-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="france">France</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="denmark">Denmark</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="peru">Peru</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="australia">Australia</label> 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="france">France</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="denmark">Denmark</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="peru">Peru</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="australia">Australia</label> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row hiddengrouprow" id="groupdinput">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Group D</h1>
+		</div>
+		<div class="col-md-3 col-md-offset-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="croatia">Croatia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="argentina">Argentina</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="nigeria">Nigeria</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="iceland">Iceland</label> 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="croatia">Croatia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="argentina">Argentina</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="nigeria">Nigeria</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="iceland">Iceland</label> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row hiddengrouprow" id="groupeinput">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Group E</h1>
+		</div>
+		<div class="col-md-3 col-md-offset-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="brazil">Brazil</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="switzerland">Switzerland</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="serbia">Serbia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="costa-rica">Costa Rica</label> 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="brazil">Brazil</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="switzerland">Switzerland</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="serbia">Serbia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="costa-rica">Costa Rica</label> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row hiddengrouprow" id="groupfinput">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Group F</h1>
+		</div>
+		<div class="col-md-3 col-md-offset-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="mexico">Mexico</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="germany">Germany</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="sweden">Sweden</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="south-korea">South Korea</label> 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="mexico">Mexico</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="germany">Germany</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="sweden">Sweden</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="south-korea">South Korea</label> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row hiddengrouprow" id="groupginput">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Group G</h1>
+		</div>
+		<div class="col-md-3 col-md-offset-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="england">England</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="belgium">Belgium</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="tunesia">Tunesia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="panama">Panama</label> 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="england">England</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="belgium">Belgium</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="tunesia">Tunesia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="panama">Panama</label> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row hiddengrouprow" id="grouphinput">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Group H</h1>
+		</div>
+		<div class="col-md-3 col-md-offset-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="japan">Japan</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="senegal">Senegal</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="colombia">Colombia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teamaname" value="poland">Poland</label> 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="radiogroup">
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="japan">Japan</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="senegal">Senegal</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="colombia">Colombia</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="teambname" value="poland">Poland</label> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-2 col-md-offset-4">
+			<h3>Team Score</h3>
+			<input type=text name="teamascore" placeholder="Team score">
+		</div>
+		<div class="col-md-2">
+			<h3>Team Score</h3>
+			<input type=text name="teamabcore" placeholder="Team score">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-2 col-md-offset-5">
+			<input type="submit">
+		</div>
+	</div>
+
+</form>
+
+<% include partials/footer %>

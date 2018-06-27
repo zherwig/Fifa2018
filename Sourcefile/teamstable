@@ -1,0 +1,42 @@
+CREATE TABLE teams (
+	teamname varchar(255) NOT NULL UNIQUE,
+	printname varchar(255),
+	teamowner varchar(255),
+	teamimg varchar(255),
+	PRIMARY KEY (teamname)
+);
+
+INSERT INTO teams (teamname, printname, teamowner, teamimg) VALUES
+('uruguay', 'Uruguay', 'Shani', 'https://png.icons8.com/office/40/ffffff/uruguay.png'),
+('russia', 'Russia', 'Janet', 'https://png.icons8.com/office/40/ffffff/russian-federation.png'),
+('saudi-arabia', 'Saudi Arabia', 'Neil and MariAngel', 'https://png.icons8.com/office/40/ffffff/saudi-arabia.png'),
+('egypt', 'Egypt', 'Rob', 'https://png.icons8.com/office/40/ffffff/egypt.png'),
+('spain', 'Spain', 'Hila', 'https://png.icons8.com/office/40/ffffff/spain.png'),
+('portugal', 'Portugal', 'Jon', 'https://png.icons8.com/office/40/ffffff/portugal.png'),
+('iran', 'Iran', 'Elspeth', 'https://png.icons8.com/office/40/ffffff/iran.png'),
+('morocco', 'Morocco', 'Andre', 'https://png.icons8.com/office/40/ffffff/morocco.png'),
+('france', 'France', 'Joe and Jennifer', 'https://png.icons8.com/office/40/ffffff/france.png'),
+('denmark', 'Denmark', 'Guy','https://png.icons8.com/office/40/ffffff/denmark.png'),
+('peru', 'Peru', 'Ariela','https://png.icons8.com/office/40/ffffff/peru.png'),
+('australia', 'Australia', 'Zjef', 'https://png.icons8.com/office/40/ffffff/australia-flag.png'),
+('croatia', 'Croatia', 'Yifat', 'https://png.icons8.com/office/40/ffffff/croatia.png'),
+('argentina', 'Argentina', 'Amir', 'https://png.icons8.com/office/40/ffffff/argentina.png'),
+('nigeria', 'Nigeria', 'Shahar', NULL),
+('iceland', 'Iceland', 'Kate', 'https://png.icons8.com/office/40/ffffff/iceland.png'),
+('brazil', 'Brazil', 'Ram', 'https://png.icons8.com/office/40/ffffff/brazil.png'),
+('switserland', 'Switserland', 'Iris, Koby and Michal', 'https://png.icons8.com/office/40/ffffff/switzerland.png'), 
+('serbia','Serbia', 'Rafi','https://png.icons8.com/office/40/ffffff/serbia.png'),
+('costa-rica', 'Costa Rica', 'Taga', 'https://png.icons8.com/office/40/ffffff/costa-rica.png'),
+('mexico', 'Mexico', 'Anita', 'https://png.icons8.com/color/40/ffffff/mexico.png'),
+('germany', 'Germany', 'Barak', 'https://png.icons8.com/office/40/ffffff/germany.png'),
+('sweden', 'Sweden', 'Eyal', 'https://png.icons8.com/office/40/ffffff/sweden.png'),
+('south-korea', 'South Korea', 'Alon and Roy', 'https://png.icons8.com/office/40/ffffff/south-korea.png'),
+('england', 'England', 'Paulin', 'https://png.icons8.com/office/40/ffffff/england.png'),
+('belgium', 'Belgium', 'Karina', 'https://png.icons8.com/office/40/ffffff/belgium.png'),
+('tunisia', 'Tunisia', 'Keren', 'https://png.icons8.com/office/40/ffffff/tunisia.png'),
+('panama', 'Panama', 'Gwen', 'https://png.icons8.com/color/40/ffffff/panama.png'),
+('japan', 'Japan', 'Isabel', 'https://png.icons8.com/office/40/ffffff/japan.png'),
+('senegal', 'Senegal', 'Leanne', NULL),
+('colombia', 'Colombia', 'Marina', 'https://png.icons8.com/office/40/ffffff/colombia.png'),
+('poland', 'Poland', 'Talia', 'https://png.icons8.com/office/40/ffffff/poland.png');
+

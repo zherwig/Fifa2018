@@ -1,0 +1,15 @@
+CREATE TABLE matches(
+	match_id int NOT NULL AUTO_INCREMENT,
+	teamname varchar(255),
+	match_against varchar(255),
+	match_goals_for INT,
+	match_goals_against INT,
+	match_points INT,
+	match_goaldif INT,
+	PRIMARY KEY (match_id),
+	FOREIGN KEY (teamname) REFERENCES teams(teamname)
+);
+
+
+
+
