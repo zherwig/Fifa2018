@@ -28,7 +28,7 @@ var connection =  mysql.createConnection({
 //
 
 app.get("/", function(req,res){
-	var toplist = 'SELECT ANY_VALUE(matches.printname) as team, ANY_VALUE(teams.teamowner) AS owner, ANY_VALUE(teams.teamimg) AS image, sum(match_points) AS points, sum(match_goaldif) AS goaldif FROM matches LEFT JOIN teams ON matches.teamname = teams.teamname GROUP BY matches.teamname ORDER BY points DESC, goaldif DESC'
+	var toplist = 'SELECT ANY_VALUE(teams.printname) as team, ANY_VALUE(teams.teamowner) AS owner, ANY_VALUE(teams.teamimg) AS image, sum(match_points) AS points, sum(match_goaldif) AS goaldif FROM matches LEFT JOIN teams ON matches.teamname = teams.teamname GROUP BY matches.teamname ORDER BY points DESC, goaldif DESC'
 	if(error) throw error;
 	var lists = results;
 		var qmatches = 'SELECT n1.team, n1.owner, n1.teamimage, teams.printname as opponent, teams.teamowner as op_owner, teams.teamimg as op_img, n1.goals_for, n1.goals_against FROM (SELECT teams.printname as team, teams.teamowner as owner, teams.teamimg as teamimage, matches.match_against as opponent, matches.match_goals_for as goals_for, matches.match_goals_against as goals_against FROM matches LEFT JOIN teams on matches.teamname = teams.teamname) as n1 LEFT JOIN teams on n1.opponent = teams.teamname;'
