@@ -23,6 +23,28 @@
 					<td> <%= lists[i].points %></td>
 					<td> <%= lists[i].goaldif %></td>
 				</tr>
+				<tr>
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">Team</th>
+								<th scope="col">Opponent</th>
+								<th scope="col">Score</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% for(var i=0; i < matches.length; i++){ %>
+								<% if(matches[i].team = lists[i].team){ %>
+									<tr>
+										<td><img src="<%= matches[i].teamimage %>"> <%= matches[i].team %></td>
+										<td><img src="<%= matches[i].op_image %>"> <%= matches[i].opponent %></td>
+										<td><%= matches[i].goals_for%> - <%= matches[i].goals_against%></td>
+									</tr>
+								<% } %>
+							<% } %>
+						</tbody>
+					</table>
+				</tr>
 				<% } %>
 			</tbody>
 		</table>
