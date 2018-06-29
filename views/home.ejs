@@ -35,7 +35,7 @@
 							</thead>
 							<tbody>
 								<% for(var j=0; j < matches.length; j++){ %>
-									<% if(matches[j].team = lists[i].team){ %>
+									<% if(matches[j].team == lists[i].team){ %>
 										<tr>
 											<td><img src="<%= matches[j].teamimage %>"> <%= matches[j].team %></td>
 											<td><img src="<%= matches[j].op_image %>"> <%= matches[j].opponent %></td>
