@@ -23,28 +23,30 @@
 					<td> <%= lists[i].points %></td>
 					<td> <%= lists[i].goaldif %></td>
 				</tr>
-<!-- 				<tr>
-					<table class="table">
-						<thead>
-							<tr>
-								<th scope="col">Team</th>
-								<th scope="col">Opponent</th>
-								<th scope="col">Score</th>
-							</tr>
-						</thead>
-						<tbody>
-							<% for(var j=0; j < matches.length; j++){ %>
-								<% if(matches[j].team = lists[i].team){ %>
-									<tr>
-										<td><img src="<%= matches[j].teamimage %>"> <%= matches[j].team %></td>
-										<td><img src="<%= matches[j].op_image %>"> <%= matches[j].opponent %></td>
-										<td><%= matches[j].goals_for%> - <%= matches[j].goals_against%></td>
-									</tr>
+				<tr>
+					<td colpan="6">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">Team</th>
+									<th scope="col">Opponent</th>
+									<th scope="col">Score</th>
+								</tr>
+							</thead>
+							<tbody>
+								<% for(var j=0; j < matches.length; j++){ %>
+									<% if(matches[j].team = lists[i].team){ %>
+										<tr>
+											<td><img src="<%= matches[j].teamimage %>"> <%= matches[j].team %></td>
+											<td><img src="<%= matches[j].op_image %>"> <%= matches[j].opponent %></td>
+											<td><%= matches[j].goals_for%> - <%= matches[j].goals_against%></td>
+										</tr>
+									<% } %>
 								<% } %>
-							<% } %>
-						</tbody>
-					</table>
-				</tr> -->
+							</tbody>
+						</table>
+					</td>
+				</tr>
 				<% } %>
 			</tbody>
 		</table>
