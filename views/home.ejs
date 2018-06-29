@@ -16,16 +16,17 @@
 			</thead>
 			<tbody>
 				<% for(var i=0; i < lists.length; i++){ %>
+				<% var category = lists[i].team; var res = category.replace(" ","_"); lists[i].category = res %>
 				<tr>
 					<th scrope="row"> <%= i+1 %> </th>
-					<td> <img src="<%= var cat = lists[i].image; cat.replace(" ","_") %>"></td> 
+					<td> <img src="<%= lists[i].category %>"></td> 
 					<td> <%= lists[i].team %></td>
 					<td> <%= lists[i].owner %></td>
 					<td> <%= lists[i].points %></td>
 					<td> <%= lists[i].goaldif %></td>
 					<td> <button class="btn btn-primary <%= lists[i].team %>">Show Matches</button></td>
 				</tr>
-				<tr class="hiddentable" id="<%= var cat = lists[i].image; cat.replace(" ","_") %>">
+				<tr class="hiddentable" id="<%= lists[i].category %>">
 					<td colspan="6">
 						<table class="table">
 							<thead>
