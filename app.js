@@ -35,7 +35,6 @@ app.get("/", function(req,res){
 		for(var i=0; i < lists.length; i++){
 			var category = lists[i].team;
 			lists[i].category = category.replace(" ","_");
-			console.log(lists[i].category);
 		}
 			var qmatches = 'SELECT n1.team, n1.owner, n1.teamimage, teams.printname as opponent, teams.teamowner as op_owner, teams.teamimg as op_img, n1.goals_for, n1.goals_against FROM (SELECT teams.printname as team, teams.teamowner as owner, teams.teamimg as teamimage, matches.match_against as opponent, matches.match_goals_for as goals_for, matches.match_goals_against as goals_against FROM matches LEFT JOIN teams on matches.teamname = teams.teamname) as n1 LEFT JOIN teams on n1.opponent = teams.teamname';
 			connection.query(qmatches, function (error, results){
