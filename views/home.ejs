@@ -2,7 +2,7 @@
 
 <div class="row">
 	<div class="col-md-8 col-md-offset-2">
-		<table class="table">
+		<table class="table" id="teams_table">
 			<thead>
 				<tr>
 					<th scope="col">#</th>
@@ -11,6 +11,7 @@
 					<th scope="col">Owner</th>
 					<th scope="col">Points</th>
 					<th scope="col">Goal Difference</th>
+					<th scope="col"></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -22,8 +23,9 @@
 					<td> <%= lists[i].owner %></td>
 					<td> <%= lists[i].points %></td>
 					<td> <%= lists[i].goaldif %></td>
+					<td> <button class="btn btn-primary <%= lists[i].team %>">Show Matches</button></td>
 				</tr>
-				<tr>
+				<tr class="hiddentable" id="<%= lists[i].team %>">
 					<td colspan="6">
 						<table class="table">
 							<thead>
@@ -38,7 +40,7 @@
 									<% if(matches[j].team == lists[i].team){ %>
 										<tr>
 											<td><img src="<%= matches[j].teamimage %>"> <%= matches[j].team %></td>
-											<td><img src="<%= matches[j].op_image %>"> <%= matches[j].opponent %></td>
+											<td><img src="<%= matches[j].op_img %>"> <%= matches[j].opponent %></td>
 											<td><%= matches[j].goals_for%> - <%= matches[j].goals_against%></td>
 										</tr>
 									<% } %>

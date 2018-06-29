@@ -37,4 +37,4 @@ $('#grouphbutton').click(function(){
 	$("#grouphinput").toggle();
 })
 
-
+$('.belgium').click(function(){$("#belgium").toggle();})
