@@ -60,6 +60,10 @@ app.get("/matches/new", function(req, res){
 });
 
 
+app.get("/knockout", function(req, res){
+	res.render("knockout.ejs")
+});
+
 app.post("/matches", function(req,res){
 	req.body.teamascore = Number(req.body.teamascore);
 	if(isNaN(req.body.teamascore)){
