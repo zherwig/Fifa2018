@@ -18,14 +18,14 @@
 				<% for(var i=0; i < lists.length; i++){ %>
 				<tr>
 					<th scrope="row"> <%= i+1 %> </th>
-					<td> <img src="<%= lists[i].image.replace(" ","_") %>"></td> 
+					<td> <img src="<%= var cat = lists[i].image; cat.replace(" ","_") %>"></td> 
 					<td> <%= lists[i].team %></td>
 					<td> <%= lists[i].owner %></td>
 					<td> <%= lists[i].points %></td>
 					<td> <%= lists[i].goaldif %></td>
 					<td> <button class="btn btn-primary <%= lists[i].team %>">Show Matches</button></td>
 				</tr>
-				<tr class="hiddentable" id="<%= lists[i].team.replace(" ","_") %>">
+				<tr class="hiddentable" id="<%= var cat = lists[i].image; cat.replace(" ","_") %>">
 					<td colspan="6">
 						<table class="table">
 							<thead>
