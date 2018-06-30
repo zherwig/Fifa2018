@@ -11,3 +11,105 @@
 .hiddentable{
 	display: none;
 }
+
+/*Knockout*/
+.divider{
+	border-right: none;
+	border-left: none;
+	height: 50px;
+}
+
+.bigdivider{
+	border-right: none;
+	border-left: none;
+	height: 285px;
+	background-color: #dbe8ff;
+}
+
+.bigdivider2{
+	border-right: none;
+	border-left: none;
+	height: 700px;
+	background-color: #dbe8ff;
+}
+
+.against {
+	text-align: center;
+	padding: 2px;
+	border-right: none;
+	border-left: none;
+	font-style: italic;
+	font-weight: bold;
+	color: gray;
+}
+
+.top1{
+	border-top: none;
+	height: 125px;
+	background-color: #dbe8ff;
+}
+
+.top2{
+	border-top: none;
+	height: 350px;
+	background-color: #dbe8ff;
+}
+
+.countrytable{
+	width:200px;
+	margin: auto;
+}
+
+.staff{
+	text-align: center;
+	width: 75px;
+	font-style: italic;
+}
+
+.countryimg{
+	width:40px;
+	padding-right: 10px;
+}
+
+.countryname{
+	font-weight: bold;
+}
+
+.paddingfix{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.bottom{
+	border-bottom: none;
+}
+
+.current{
+	background-color: #dbe8ff;
+}
+
+.titleband{
+	height: 75px;
+	margin:auto;
+}
+
+.titletext{
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.titletext1{
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.titletext2{
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	padding-top: 20px;
+	padding-left: 40px;
+}

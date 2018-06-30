@@ -27,7 +27,11 @@ var connection =  mysql.createConnection({
 // ROUTES
 //
 
-app.get("/", function(req,res){
+app.get("/", function(req, res){
+	res.render("knockout.ejs")
+});
+
+app.get("/group", function(req,res){
 	var toplist = 'SELECT ANY_VALUE(teams.printname) as team, ANY_VALUE(teams.teamowner) AS owner, ANY_VALUE(teams.teamimg) AS image, sum(match_points) AS points, sum(match_goaldif) AS goaldif FROM matches LEFT JOIN teams ON matches.teamname = teams.teamname GROUP BY teams.printname ORDER BY points DESC, goaldif DESC';
 	connection.query(toplist, function (error, results){
 		if(error) throw error;
